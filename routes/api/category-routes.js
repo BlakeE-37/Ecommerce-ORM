@@ -29,8 +29,17 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   // create a new category
+  try {
+    // Since the model will create a unique UUID value by default, we just need to provide the `id` of the Reader that will own this card
+    const Data = await Category.create({
+      category_name: req.body.category_name,
+    });
+    res.status(200).json(Data);
+  } catch (err) {
+    res.status(400).json(err);
+  }
 });
 
 router.put('/:id', (req, res) => {
