@@ -15,7 +15,7 @@ This project acts as a back end for an ecommerce website. Using node.js and sequ
 To install the application, clone the repository, then using the mysql CLI create and seed the database. After that, start the server by running ```npm start``` in your terminal.
 
 ## Usage
-To use the app use any REST client to send http requests to the server. A video demonstration can be viewed [here]()
+To use the app use any REST client to send http requests to the server. A video demonstration can be viewed [here.](https://www.youtube.com/watch?v=hcHcf5TWxkc)
 
 ## License
 [none]()
